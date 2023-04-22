@@ -1,11 +1,13 @@
 import express, { Request, Response } from "express"
 import * as encriptador from "./encriptador";
+import cors from "cors";
 
 const PORT = 3000
-
-
+const CLIENT_URL = "http://localhost:5173"
 
 const app = express();
+
+app.use(cors({ origin: CLIENT_URL }))
 
 
 app.get("/encriptar/:texto", async (req: Request, res: Response) => {

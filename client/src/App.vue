@@ -2,9 +2,17 @@
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import { encriptar } from "./modules/EncryptServices";
+import type { ButtonHTMLAttributes } from "vue";
 
 const testEncriptar = () => {
-  encriptar("asd");
+  const button = document.getElementById(
+    "testBtn"
+  )! as unknown as ButtonHTMLAttributes;
+
+  encriptar("asd").then((res) => {
+    console.log(res);
+    button.innerHTML = res as unknown as string;
+  });
 };
 </script>
 
@@ -24,7 +32,7 @@ const testEncriptar = () => {
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-        <button @click="testEncriptar"></button>
+        <button @click="testEncriptar" id="testBtn"></button>
       </nav>
     </div>
   </header>
