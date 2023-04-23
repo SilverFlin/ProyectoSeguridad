@@ -2,17 +2,21 @@
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import { encriptar } from "./modules/EncryptServices";
-import type { ButtonHTMLAttributes } from "vue";
+import { ref } from "vue";
+import type { ButtonHTMLAttributes, ImgHTMLAttributes } from "vue";
 
-const testEncriptar = () => {
-  const button = document.getElementById(
-    "testBtn"
-  )! as unknown as ButtonHTMLAttributes;
+const isTestBtnToggled = ref(false);
+const tuHashSir = ref("");
 
-  encriptar("asd").then((res) => {
-    console.log(res);
-    button.innerHTML = res as unknown as string;
-  });
+const toggleTest = () => {
+  encriptar("SF")
+    .then((res) => {
+      isTestBtnToggled.value = !isTestBtnToggled.value;
+      tuHashSir.value = `Tu hash: ${res.data.hash}`;
+    })
+    .catch(() => {
+      tuHashSir.value = "Error xd";
+    });
 };
 </script>
 
@@ -32,7 +36,19 @@ const testEncriptar = () => {
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
-        <button @click="testEncriptar" id="testBtn"></button>
+        <div @click="toggleTest">
+          <img
+            style="height: 100px; width: 100px"
+            v-if="isTestBtnToggled"
+            src="https://media1.giphy.com/media/cW64pEEZe0YZa/giphy.gif?cid=ecf05e476wy12toj4qqxluxmiu9qp5byazt0y69kme4g7e9m&amp;rid=giphy.gif&amp;ct=g"
+          />
+          <img
+            style="height: 100px; width: 100px"
+            v-if="!isTestBtnToggled"
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzc5MWM5Y2MwMzY2OTBhMjQ4YTVjOTFjOGRlZDQ1Y2MzMDI3M2YyMCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/hFIs2EaDP03AQAjHnk/giphy.gif"
+          />
+          <p>{{ tuHashSir }}</p>
+        </div>
       </nav>
     </div>
   </header>
