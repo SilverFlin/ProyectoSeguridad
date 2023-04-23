@@ -8,7 +8,8 @@ async function encriptar(texto: string): Promise<string> {
     console.log(rand)
     await new Promise(resolve => setTimeout(resolve, rand));
 
-    return rand + ""
+    return rand + texto
+
 }
 // TODO implementar desencriptador
 async function desencriptar(hash: string): Promise<string> {
