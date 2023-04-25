@@ -11,8 +11,9 @@ const tuHashSir = ref("");
 const toggleTest = () => {
   encriptar("SF")
     .then((res) => {
+      console.log(res);
       isTestBtnToggled.value = !isTestBtnToggled.value;
-      tuHashSir.value = `Tu hash: ${res.data.hash}`;
+      tuHashSir.value = `Tu hash: ${res.data.texto}`;
     })
     .catch(() => {
       tuHashSir.value = "Error xd";
