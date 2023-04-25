@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express"
 import cors from "cors";
 import { api } from "./routes/api";
+import helmet from "helmet"
 
 const CLIENT_URL = "http://localhost:5173"
 
@@ -11,6 +12,7 @@ const app = express();
  *  desactivar esto generaría un error por políticas de CORS.
  */
 app.use(cors({ origin: CLIENT_URL }))
+app.use(helmet())
 
 // TODO montar página estática.
 
