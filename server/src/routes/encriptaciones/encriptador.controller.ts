@@ -4,7 +4,7 @@ import * as encriptador from "./encriptador.services";
 async function httpGetHash(req: Request, res: Response) {
     const hash = req.params.hash;
 
-    res.json({
+    return res.json({
         data: {
             texto: await encriptador.desencriptar(hash)
         },
@@ -15,7 +15,7 @@ async function httpGetHash(req: Request, res: Response) {
 async function httpGetTexto(req: Request, res: Response) {
     const textoEncriptar = req.params.texto;
 
-    await encriptador.encriptar(textoEncriptar)
+    return await encriptador.encriptar(textoEncriptar)
         .then((data) => {
             return res.status(200).json({
                 data: { hash: data },

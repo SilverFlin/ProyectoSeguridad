@@ -2,12 +2,13 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "dev": "nodemon dist/index.js",
+    "start": "node dist/server.js",
+    "dev": "nodemon dist/server.js",
     "watch": "tsc -w",
-    "build": "tsc"
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf dist/"
   },
   "author": "",
   "license": "ISC",
