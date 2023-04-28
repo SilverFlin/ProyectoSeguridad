@@ -41,12 +41,12 @@ const toggleTest = () => {
           <img
             style="height: 100px; width: 100px"
             v-if="isTestBtnToggled"
-            src="https://media1.giphy.com/media/cW64pEEZe0YZa/giphy.gif?cid=ecf05e476wy12toj4qqxluxmiu9qp5byazt0y69kme4g7e9m&amp;rid=giphy.gif&amp;ct=g"
+            src="@/assets/images/cute-cat.gif"
           />
           <img
             style="height: 100px; width: 100px"
             v-if="!isTestBtnToggled"
-            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzc5MWM5Y2MwMzY2OTBhMjQ4YTVjOTFjOGRlZDQ1Y2MzMDI3M2YyMCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/hFIs2EaDP03AQAjHnk/giphy.gif"
+            src="@/assets//images/kitty-cat-sandwich.gif"
           />
           <p>{{ tuHashSir }}</p>
         </div>
