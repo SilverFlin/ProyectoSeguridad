@@ -14,5 +14,8 @@ export default defineConfig({
   server: {
     port: 5173,
   },
-  base: "../server/public"
+  build: {
+    outDir: '../server/public', // this line place index.html in the public folder
+    assetsDir: './dist', // this line place your assets in the public/dist folder
+  }
 })

@@ -7,7 +7,7 @@
     "start": "node dist/server.js",
     "dev": "nodemon dist/server.js",
     "watch": "tsc -w",
-    "build": "npm run clean && tsc",
+    "build": "tsc",
     "clean": "rm -rf dist/"
   },
   "author": "",

@@ -15,9 +15,7 @@ const app = express();
 app.use(cors({ origin: CLIENT_URL }))
 app.use(helmet())
 
-// TODO montar página estática.
-console.log(path.resolve(path.dirname("../../")))
-app.use(express.static(path.join(path.resolve(path.dirname("../../")), "dist/public"))); // Serving the build folder of the front-end
+app.use(express.static(path.join(path.resolve(path.dirname("")), "public"))); // Serving the build folder of the front-end
 
 /**
  * Monta las rutas de la primer versión de la API.
