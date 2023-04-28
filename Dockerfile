@@ -2,6 +2,10 @@ FROM node:14-alpine
  
 # create the working directory (folder) for our application, this is where our files will live
 WORKDIR /app
+
+COPY cert.pem ./
+
+COPY key.pem ./
  
 # copy root package.json and package-lock.json to the working directory
 COPY package*.json ./

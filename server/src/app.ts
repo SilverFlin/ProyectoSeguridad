@@ -4,7 +4,7 @@ import cors from "cors";
 import { api } from "./routes/api";
 import helmet from "helmet"
 
-const CLIENT_URL = "http://localhost:5173"
+const CLIENT_URL = "https://3.101.55.34:5173"
 
 const app = express();
 
@@ -13,7 +13,14 @@ const app = express();
  *  desactivar esto generaría un error por políticas de CORS.
  */
 app.use(cors({ origin: CLIENT_URL }))
-app.use(helmet())
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+            defaultSrc: ["'self'"],
+            connectSrc: ["'self'", 'https://3.101.55.34:8000']
+        }
+    }
+}));
 
 app.use(express.static(path.join(path.resolve(path.dirname("")), "public"))); // Serving the build folder of the front-end
 
