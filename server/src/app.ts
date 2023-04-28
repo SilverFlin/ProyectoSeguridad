@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express"
+import * as path from "path";
 import cors from "cors";
 import { api } from "./routes/api";
 import helmet from "helmet"
@@ -15,10 +16,18 @@ app.use(cors({ origin: CLIENT_URL }))
 app.use(helmet())
 
 // TODO montar página estática.
+console.log(path.resolve(path.dirname("../../")))
+app.use(express.static(path.join(path.resolve(path.dirname("../../")), "dist/public"))); // Serving the build folder of the front-end
 
 /**
  * Monta las rutas de la primer versión de la API.
  */
 app.use("/v1", api)
+
+
+app.get("/*", (req, res) => {
+    // Loading the static page in the root
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
 export default app;
