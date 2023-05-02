@@ -3,6 +3,7 @@ import * as path from "path";
 import cors from "cors";
 import { api } from "./routes/api";
 import helmet from "helmet"
+// import passport from "passport"
 
 const CLIENT_URL = "https://3.101.55.34:5173"
 
@@ -21,6 +22,9 @@ app.use(helmet({
         }
     }
 }));
+
+// app.use(passport.initialize())
+// app.use(passport.session())
 
 app.use(express.static(path.join(path.resolve(path.dirname("")), "public"))); // Serving the build folder of the front-end
 

@@ -10,5 +10,12 @@
     "deploy": "npm run build --prefix client && npm start --prefix server"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/passport": "^1.0.12"
+  }
 }

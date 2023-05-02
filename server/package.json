@@ -22,12 +22,12 @@
     "mongoose": "^7.0.4",
     "nodemon": "^2.0.22",
     "passport": "^0.6.0",
-    "passport-google-oauth20": "^2.0.0",
-    "proyectoseguridad": "file:.."
+    "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
+    "proyectoseguridad": "file:..",
     "typescript": "^5.0.4"
   }
 }
