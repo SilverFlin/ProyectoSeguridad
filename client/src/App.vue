@@ -54,7 +54,7 @@ const toggleTest = () => {
     </div>
   </header>
 
-  <RouterView />
+  <RouterView /> 
 </template>
 
 <style scoped>
