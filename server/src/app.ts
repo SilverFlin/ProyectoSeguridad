@@ -3,6 +3,7 @@ import * as path from "path";
 import cors from "cors";
 import { api } from "./routes/api";
 import helmet from "helmet"
+require("dotenv").config()
 // import passport from "passport"
 
 const CLIENT_URL = "https://3.101.55.34:5173"
