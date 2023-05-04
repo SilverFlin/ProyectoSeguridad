@@ -23,21 +23,22 @@ const toggleTest = () => {
 </script>
 
 <template>
-  <Header></Header>
+  <div>
+    <Header></Header>
 
-  <div @click="toggleTest" class="inline-block">
-    <img
-      style="height: 100px; width: 100px"
-      v-if="isTestBtnToggled"
-      src="@/assets/images/cute-cat.gif"
-    />
-    <img
-      style="height: 100px; width: 100px"
-      v-if="!isTestBtnToggled"
-      src="@/assets//images/kitty-cat-sandwich.gif"
-    />
-    <p>{{ tuHashSir }}</p>
+    <RouterView />
+    <div @click="toggleTest">
+      <img
+        style="height: 100px; width: 100px"
+        v-if="isTestBtnToggled"
+        src="@/assets/images/cute-cat.gif"
+      />
+      <img
+        style="height: 100px; width: 100px"
+        v-if="!isTestBtnToggled"
+        src="@/assets//images/kitty-cat-sandwich.gif"
+      />
+      <p>{{ tuHashSir }}</p>
+    </div>
   </div>
-
-  <RouterView />
 </template>
