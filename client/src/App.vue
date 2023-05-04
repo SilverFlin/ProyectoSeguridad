@@ -25,7 +25,7 @@ const toggleTest = () => {
 <template>
   <Header></Header>
 
-  <div @click="toggleTest">
+  <div @click="toggleTest" class="inline-block">
     <img
       style="height: 100px; width: 100px"
       v-if="isTestBtnToggled"
