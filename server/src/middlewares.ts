@@ -1,11 +1,18 @@
-// function checkLoggedIn(req: Request, res: Response, next: NextFunction) {
-//     const isLoggedIn = req.isAuthenticated() && req.user;
+import { Request, Response, NextFunction } from "express";
 
-//     if (!isLoggedIn) {
-//         return res.status(401).json({
-//             error: 'You must log in'
-//         })
-//     }
 
-//     next();
-// }
+function checkLoggedIn(req: Request, res: Response, next: NextFunction) {
+    const isLoggedIn = req.isAuthenticated() && req.user;
+
+    if (!isLoggedIn) {
+        return res.status(401).json({
+            error: 'You must log in'
+        })
+    }
+
+    next();
+}
+
+export {
+    checkLoggedIn
+}

@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "https://3.101.55.34:8000/v1/";
+const API_URL = "https://localhost:8000/v1/";
 
 const encriptar = async (texto: string) => {
     return await axios.get(`${API_URL}encriptar/${texto}`)
