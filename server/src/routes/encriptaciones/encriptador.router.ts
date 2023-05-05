@@ -10,6 +10,7 @@ import { checkLoggedIn } from "../../middlewares.js";
 const encriptadorRouter = express.Router();
 
 encriptadorRouter.get("/encriptar/:texto", checkLoggedIn, httpGetHash);
+
 encriptadorRouter.get("/desencriptar/:texto", checkLoggedIn, httpGetTexto);
 
 

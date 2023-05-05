@@ -2,7 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./components/Header.vue";
-import { encriptar } from "./modules/EncryptServices";
+import { encriptarRequest } from "./modules/EncryptServices";
 import { ref } from "vue";
 import type { ButtonHTMLAttributes, ImgHTMLAttributes } from "vue";
 
@@ -10,7 +10,7 @@ const isTestBtnToggled = ref(false);
 const tuHashSir = ref("");
 
 const toggleTest = () => {
-  encriptar("SF")
+  encriptarRequest("SF")
     .then((res) => {
       console.log(res);
       isTestBtnToggled.value = !isTestBtnToggled.value;

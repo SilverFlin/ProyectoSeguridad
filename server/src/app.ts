@@ -77,6 +77,12 @@ app.use(passport.session())
 
 app.use(express.static(path.join(path.resolve(path.dirname("")), "public"))); // Serving the build folder of the front-end
 
+
+/**
+ * Monta las rutas de la primer versión de la API.
+ */
+app.use("/v1", api)
+
 // TODO mover
 /* Auth */
 app.get("/auth/google", passport.authenticate('google', {
@@ -100,10 +106,7 @@ app.get("/auth/google/callback",
         console.log('Google called us back')
     })
 
-/**
- * Monta las rutas de la primer versión de la API.
- */
-app.use("/v1", api)
+
 
 
 app.get("/", (req, res) => {
