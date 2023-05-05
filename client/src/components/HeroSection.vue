@@ -9,11 +9,7 @@
         <div class="px-6 lg:px-0 lg:pt-4">
           <div class="max-w-2xl mx-auto">
             <div class="max-w-lg">
-              <img
-                class="h-11"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&amp;shade=600"
-                alt="Your Company"
-              />
+              <img class="h-11" src="../../img/gato1.jpg" alt="Your Company" />
               <div class="mt-24 sm:mt-32 lg:mt-16">
                 <a href="#" class="inline-flex space-x-6">
                   <span

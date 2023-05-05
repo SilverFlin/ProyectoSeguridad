@@ -9,11 +9,7 @@
       <div class="flex lg:flex-1">
         <RouterLink to="/" class="-m-1.5 p-1.5">
           <span class="sr-only">CodeLeap</span>
-          <img
-            class="w-auto h-8"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt=""
-          />
+          <img class="w-auto h-8" src="../../img/gato2.jpg" alt="" />
         </RouterLink>
       </div>
       <div class="flex lg:hidden">
