@@ -1,5 +1,9 @@
 <template>
   <div>
-    <h1>This is an about page</h1>
+    <ContentSection></ContentSection>
   </div>
 </template>
+
+<script setup lang="ts">
+import ContentSection from "../components/ContentSection.vue";
+</script>
