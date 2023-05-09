@@ -62,12 +62,12 @@
         <div class="flow-root mt-6">
           <div class="-my-6 divide-y divide-gray-500/10">
             <div class="py-6 space-y-2">
-              <a
+              <RouterLink
                 v-for="item in navigation"
                 :key="item.name"
-                :href="item.href"
+                :to="item.href"
                 class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
-                >{{ item.name }}</a
+                >{{ item.name }}</RouterLink
               >
             </div>
             <div class="py-6">
