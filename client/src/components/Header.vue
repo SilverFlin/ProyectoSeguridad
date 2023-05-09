@@ -27,8 +27,22 @@
           >{{ item.name }}</RouterLink
         >
       </div>
+
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="/auth/google">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a v-if="!isLoggedIn" @click="actualizarSesion" href="/auth/google"
+          >Log in <span aria-hidden="true">&rarr;</span></a
+        >
+
+        <a v-if="isLoggedIn" href="/auth/logout"
+          >Log out <span aria-hidden="true">X</span></a
+        >
+        <img
+          v-if="isLoggedIn"
+          class="inline-block w-10 h-10 rounded-full"
+          :src="imageURL"
+          crossorigin="anonymous"
+          alt=""
+        />
       </div>
     </nav>
     <Dialog
@@ -70,12 +84,25 @@
                 >{{ item.name }}</RouterLink
               >
             </div>
+
             <div class="py-6">
               <a
+                v-if="!isLoggedIn"
+                @click="actualizarSesion"
                 href="/auth/google"
-                class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >Log in</a
+                >Log in <span aria-hidden="true">&rarr;</span></a
               >
+
+              <a v-if="isLoggedIn" href="/auth/logout"
+                >Log out <span aria-hidden="true">X</span></a
+              >
+              <img
+                v-if="isLoggedIn"
+                class="inline-block w-10 h-10 rounded-full"
+                crossorigin="anonymous"
+                :src="imageURL"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -89,6 +116,7 @@ import { ref } from "vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 import { RouterLink } from "vue-router";
+import { currentSessionRequest } from "../modules/SessionServices";
 
 const navigation = [
   { name: "Inicio", href: "/" },
@@ -97,4 +125,20 @@ const navigation = [
 ];
 
 const mobileMenuOpen = ref(false);
+const isLoggedIn = ref(false);
+const imageURL = ref("");
+actualizarSesion();
+
+async function actualizarSesion() {
+  await currentSessionRequest()
+    .then((res) => {
+      console.log(res);
+      imageURL.value = res.imageURL;
+      if (imageURL.value) {
+        isLoggedIn.value = true;
+        console.log("Logged In");
+      }
+    })
+    .catch(() => {});
+}
 </script>

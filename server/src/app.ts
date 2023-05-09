@@ -35,9 +35,16 @@ passport.use(new Strategy({
 }, verifyCallback))
 
 /* Guardar sesión a cookies */
+
+interface GoogleUser extends Express.User {
+    photos: [{ value: string }]
+}
+
 passport.serializeUser((user: Express.User, done) => {
     // Taking only the id to use less cookie memory.
-    done(null, (user as Profile).id)
+    user = user as GoogleUser;
+    const imageURL = (user as GoogleUser).photos[0].value
+    done(null, { id: (user as Profile).id, imageURL })
 })
 
 /* Read the session from the cookie */
@@ -59,7 +66,11 @@ app.use(helmet({
     contentSecurityPolicy: {
         directives: {
             defaultSrc: ["'self'"],
-            connectSrc: ["'self'", 'https://3.101.55.34:8000']
+            connectSrc: ["'self'", 'https://3.101.55.34:8000'],
+            // connectSrc: ["'self'", 'https://lh3.googleusercontent.com'],
+            "img-src": ["'self'", "https: data:"]
+
+
         }
     }
 }));
@@ -88,7 +99,7 @@ app.use("/v1", api)
 /* Auth */
 app.get("/auth/google", passport.authenticate('google', {
     /* Things to get from the user */
-    scope: ['email']
+    scope: ['email', 'profile']
 }))
 
 app.get("/auth/logout", (req, res) => {
@@ -106,6 +117,12 @@ app.get("/auth/google/callback",
     }), (req, res) => {
         console.log('Google called us back')
     })
+
+app.get("/user/current", (req: Request, res: Response) => {
+    const passportSession = req.session?.passport.user;
+    const imageURL = passportSession.imageURL;
+    return res.json({ imageURL })
+})
 
 
 
