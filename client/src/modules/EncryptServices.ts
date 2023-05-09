@@ -17,7 +17,6 @@ const encriptarRequest = async (texto: string) => {
 
 
 const desencriptarRequest = async (hash: string) => {
-    console.log('desencriptarRequest', hash)
     return await axios({
         method: 'post',
         url: `${API_URL}desencriptar`,

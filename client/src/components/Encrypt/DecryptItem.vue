@@ -43,7 +43,6 @@ async function desencriptar() {
   await desencriptarRequest(hash.value)
     .then((res) => {
       const texto = res.data.texto;
-      console.log("desencriptarVue", texto);
       textoDesencriptado.value = texto;
     })
     .catch(() => {
