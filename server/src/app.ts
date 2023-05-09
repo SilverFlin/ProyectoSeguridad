@@ -1,6 +1,6 @@
 import * as path from "path";
 
-import express, { Request, Response } from "express"
+import express, { Request, Response, json } from "express"
 import { api } from "./routes/api";
 
 import helmet from "helmet"
@@ -53,6 +53,7 @@ const app = express();
  * Middleware que permite las peticiones del url del cliente,
  *  desactivar esto generaría un error por políticas de CORS.
  */
+app.use(json())
 app.use(cors({ origin: CLIENT_URL }))
 app.use(helmet({
     contentSecurityPolicy: {

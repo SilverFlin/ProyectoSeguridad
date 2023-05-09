@@ -40,10 +40,9 @@ const hash = ref("");
 const textoDesencriptado = ref("");
 
 async function desencriptar() {
-  // TODO animate promise
   await desencriptarRequest(hash.value)
-    .then((res: any) => {
-      const texto = res.data.texto;
+    .then((res) => {
+      const texto = res.data.hash;
       textoDesencriptado.value = texto;
     })
     .catch(() => {
