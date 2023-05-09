@@ -9,10 +9,10 @@ import { checkLoggedIn } from "../../middlewares.js";
 
 const encriptadorRouter = express.Router();
 
-encriptadorRouter.get("/encriptar", httpGetHash);
+encriptadorRouter.post("/encriptar", httpGetHash);
 
 
-encriptadorRouter.get("/desencriptar", httpGetTexto);
+encriptadorRouter.post("/desencriptar", httpGetTexto);
 
 
 export default encriptadorRouter;

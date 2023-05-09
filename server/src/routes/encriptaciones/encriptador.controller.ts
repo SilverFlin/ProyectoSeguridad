@@ -3,7 +3,7 @@ import * as encriptador from "./encriptador.services";
 
 async function httpGetHash(req: Request, res: Response) {
     const texto = req.body.texto;
-    console.log(texto)
+    // console.log(req)
 
     return res.json({
         data: {

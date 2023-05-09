@@ -7,20 +7,17 @@ function encriptar(texto: string): string {
     let hash = CryptoJS.AES.encrypt(texto, KEY).toString();
     const ciphertext = "U2FsdGVkX1+2Wg1WSCB5eRl523yhL+0F9s6RbENly5c=";
     const bytes = CryptoJS.AES.decrypt(hash, KEY);
-    console.log(bytes.toString(CryptoJS.enc.Utf8))
     return hash
 }
 
 function desencriptar(hash: string): string {
     // return new Promise((resolve, reject) => {
+    console.log('desencriptar', hash)
+    const realKey = CryptoJS.enc.Utf8.parse(KEY);
+    const iv = CryptoJS.enc.Utf8.parse('123');
+    const caliz = CryptoJS.AES.encrypt(hash, realKey, { iv: iv });
+    return caliz.toString();
 
-    console.log('aa', hash)
-
-    let bytes = CryptoJS.AES.decrypt(hash, KEY);
-    let texto = bytes.toString(CryptoJS.enc.Utf8) as string;
-
-
-    return texto
 }
 
 export { encriptar, desencriptar }

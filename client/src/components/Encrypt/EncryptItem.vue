@@ -42,7 +42,7 @@ const textoEncriptado = ref("");
 async function encriptar() {
   await encriptarRequest(textoEncriptar.value)
     .then((res) => {
-      const hash = res.data.texto;
+      const hash = res.data.hash;
       textoEncriptado.value = hash;
     })
     .catch(() => {
