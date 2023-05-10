@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "https://caliz.jorgeluissanchezquezada.click/v1/";
+const API_URL = "https://caliz.jorgeluissanchezquezada.click/";
 
 const currentSessionRequest = async () => {
     return await axios({
