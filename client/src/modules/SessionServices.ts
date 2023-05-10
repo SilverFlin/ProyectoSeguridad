@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "https://localhost:8000/";
+const API_URL = "https://caliz.jorgeluissanchezquezada.click/v1/";
 
 const currentSessionRequest = async () => {
     return await axios({

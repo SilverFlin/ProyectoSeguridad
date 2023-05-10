@@ -12,7 +12,7 @@ import passport from "passport";
 
 require("dotenv").config()
 
-const CLIENT_URL_PROD = "https://3.101.55.34:5173"
+const CLIENT_URL_PROD = "https://caliz.jorgeluissanchezquezada.click"
 const CLIENT_URL_DEV = `https://localhost:${process.env.PORT}`
 const CLIENT_URL = process.env.isProd === "true" ? CLIENT_URL_PROD : CLIENT_URL_DEV
 
@@ -120,8 +120,12 @@ app.get("/auth/google/callback",
 
 app.get("/user/current", (req: Request, res: Response) => {
     const passportSession = req.session?.passport.user;
-    const imageURL = passportSession.imageURL;
-    return res.json({ imageURL })
+    const imageURL = passportSession?.imageURL;
+    if (imageURL) {
+        return res.json({ imageURL })
+    } else {
+        return res.status(400).json({ imageURL: "" })
+    }
 })
 
 
