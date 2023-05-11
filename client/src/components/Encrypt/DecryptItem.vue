@@ -46,7 +46,7 @@ async function desencriptar() {
       textoDesencriptado.value = texto;
     })
     .catch(() => {
-      alert("Algo salio mal");
+      alert("Inicia Sesión");
     });
 }
 </script>

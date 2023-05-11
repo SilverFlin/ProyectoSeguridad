@@ -46,7 +46,7 @@ async function encriptar() {
       textoEncriptado.value = hash;
     })
     .catch(() => {
-      alert("Algo salio mal");
+      alert("Inicia Sesión");
     });
 }
 </script>
