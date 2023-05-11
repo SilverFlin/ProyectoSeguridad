@@ -10,43 +10,17 @@
           <div class="max-w-2xl mx-auto">
             <div class="max-w-lg">
               <img class="h-11" src="../../img/gato1.jpg" alt="Your Company" />
-              <div class="mt-24 sm:mt-32 lg:mt-16">
-                <a href="#" class="inline-flex space-x-6">
-                  <span
-                    class="px-3 py-1 text-sm font-semibold leading-6 text-indigo-600 rounded-full bg-indigo-600/10 ring-1 ring-inset ring-indigo-600/10"
-                    >What's new</span
-                  >
-                  <span
-                    class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600"
-                  >
-                    <span>Just shipped v0.1.0</span>
-                    <ChevronRightIcon
-                      class="w-5 h-5 text-gray-400"
-                      aria-hidden="true"
-                    />
-                  </span>
-                </a>
-              </div>
+              <div class="mt-24 sm:mt-32 lg:mt-16"></div>
               <h1
                 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
               >
                 Seguridad en páginas web
               </h1>
               <p class="mt-6 text-lg leading-8 text-gray-600">
-                Realizar páginas seguras para usuarios que no saben como protegerse al navegar por internet
+                Realizar páginas seguras para usuarios que no saben como
+                protegerse al navegar por internet
               </p>
-              <div class="flex items-center mt-10 gap-x-6">
-                <a
-                  href="#"
-                  class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >Documentation</a
-                >
-                <a
-                  href="#"
-                  class="text-sm font-semibold leading-6 text-gray-900"
-                  >View on GitHub <span aria-hidden="true">→</span></a
-                >
-              </div>
+              <div class="flex items-center mt-10 gap-x-6"></div>
             </div>
           </div>
         </div>
@@ -77,7 +51,7 @@
                         <div
                           class="px-4 py-2 text-white border-b border-r border-b-white/20 border-r-white/10 bg-white/5"
                         >
-                        $3gur1d4d1nf0rm4t1c4.ts
+                          $3gur1d4d1nf0rm4t1c4.ts
                         </div>
                         <div class="px-4 py-2 border-r border-gray-600/10">
                           DropDatabaseCia.sql
@@ -85,9 +59,7 @@
                       </div>
                     </div>
                     <div class="px-6 pt-6 pb-14">
-                      <p class="text-gray-400">
-                        Bienvenidos....
-                      </p>
+                      <p class="text-gray-400">Bienvenidos....</p>
                     </div>
                   </div>
                 </div>
