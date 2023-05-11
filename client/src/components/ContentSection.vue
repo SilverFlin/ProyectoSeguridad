@@ -55,18 +55,19 @@
          
         </p>
         <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-          Encriptacion DES
+          Encriptacion AES
         </h2>
         <p class="mt-6">
-          El DES (Data Encription Standard o Estándar de Encriptación de Datos) es el nombre del documento FIPS (Federal Information Processing Standard) 46-1 del Instituto Nacional de Estándares y Tecnología (NIST) del Departamento de Comercio de Estados Unidos. Fue publicado en 1977. En este documento se describe el DEA (Data Encription Algorithm o Algoritmo de Encriptación de Datos. Es el algoritmo de cifrado simétrico más estudiado, mejor conocido y más empleado del mundo.
+          Definido por el Instituto Nacional de Estándares y Tecnología (NIST National Institute of Standards and Technology) bajo la Publicación de Estándares Federales de Procesamiento de Información 197 (FIPS PUB 197), el Estándar de cifrado avanzado (AES) especifica un algoritmo criptográfico aprobado por FIPS que se puede utilizar para proteger los datos electrónicos.
+
         </p>
         
          
         <p class="mt-10">
-          
-La encriptación o cifrado es un mecanismo de seguridad que permite modificar un mensaje de modo que su contenido sea ilegible, salvo para su destinatario. De modo inverso, la desencriptación o descifrado permitirá hacer legible un mensaje que estaba cifrado.
+          El algoritmo AES es un cifrado de bloque simétrico que puede cifrar y descifrar datos. Como se muestra en la Figura 1, el cifrado convierte los datos (texto legible) en un formato ininteligible llamado texto cifrado, mientras que el descifrado convierte este texto cifrado en texto legible original. El algoritmo AES puede usar claves criptográficas de 128, 192 o 256 bits para cifrar y descifrar datos en bloques de 128 bits.
 
-Usando criptografía de clave pública el emisor del mensaje cifrará el mensaje aplicando la clave pública del destinatario. Será por tanto el destinatario, el único que podrá descifrar el mensaje aplicando su clave privada.
+
+
         </p>
       </div>
      
