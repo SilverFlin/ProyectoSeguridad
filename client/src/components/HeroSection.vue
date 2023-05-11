@@ -51,7 +51,7 @@
                         <div
                           class="px-4 py-2 text-white border-b border-r border-b-white/20 border-r-white/10 bg-white/5"
                         >
-                          $3gur1d4d1nf0rm4t1c4.ts
+                          53gur1d4d1nf0rm4t1c4.ts
                         </div>
                         <div class="px-4 py-2 border-r border-gray-600/10">
                           DropDatabaseCia.sql
@@ -59,7 +59,11 @@
                       </div>
                     </div>
                     <div class="px-6 pt-6 pb-14">
-                      <p class="text-gray-400">Bienvenidos....</p>
+                      <p class="text-gray-400">
+                        fetch("https://caliz.jorgeluissanchezquezada.click")<br />
+                        .then(()=>{<br />
+                        window.close() <br />})
+                      </p>
                     </div>
                   </div>
                 </div>
