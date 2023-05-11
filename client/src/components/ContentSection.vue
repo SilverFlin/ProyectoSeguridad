@@ -2,27 +2,21 @@
   <div class="px-6 py-32 bg-white lg:px-8">
     <div class="max-w-3xl mx-auto text-base leading-7 text-gray-700">
       <p class="text-base font-semibold leading-7 text-indigo-600">
-        Introducing
+        Introdución
       </p>
       <h1
         class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
       >
-        JavaScript for Beginners
+        Navegar de forma segura...
       </h1>
       <p class="mt-6 text-xl leading-8">
-        Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At
-        arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae
-        feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget.
-        Eleifend egestas fringilla sapien.
+      El navegar de forma segura tiene muchos requisitos ya que el usuario se expone a 
+      demasiados riesgos al navegar por internet ya que no toma en cuenta o no conoce los ataques 
+      de los cuales puede ser víctima y sin tener noción de esto.
       </p>
       <div class="max-w-2xl mt-10">
         <p>
-          Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
-          enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor
-          praesent donec est. Odio penatibus risus viverra tellus varius sit
-          neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim
-          sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis
-          id.
+          A continuación se exponen algunas rutinas de navegación que pueden reducir de manera significativa el riesgo de fraude electrónico. Estos hábitos de navegación son buenas prácticas que se deben llevar a cabo en todo momento al navegar por Internet.
         </p>
         <ul role="list" class="max-w-xl mt-8 space-y-8 text-gray-600">
           <li class="flex gap-x-3">
@@ -31,10 +25,9 @@
               aria-hidden="true"
             />
             <span
-              ><strong class="font-semibold text-gray-900">Data types.</strong>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              impedit perferendis suscipit eaque, iste dolor cupiditate
-              blanditiis ratione.</span
+              ><strong class="font-semibold text-gray-900">Datos personales</strong>
+              El guardado o uso de información en sitios los cuales quedan almacenados es lo más común hoy en dia ya que
+              por facilitar algún proceso o agilizar alguna acción deciden dejar su información personal guardada, nunca lo hagas.</span
             >
           </li>
           <li class="flex gap-x-3">
@@ -43,9 +36,8 @@
               aria-hidden="true"
             />
             <span
-              ><strong class="font-semibold text-gray-900">Loops.</strong> Anim
-              aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-              cupidatat commodo.</span
+              ><strong class="font-semibold text-gray-900">Cookies de terceros</strong> Anim
+              Nunca aceptes cookies de terceros en páginas en las cuales no sean de confianza</span
             >
           </li>
           <li class="flex gap-x-3">
@@ -54,91 +46,31 @@
               aria-hidden="true"
             />
             <span
-              ><strong class="font-semibold text-gray-900">Events.</strong> Ac
-              tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et
-              magna sit morbi lobortis.</span
+              ><strong class="font-semibold text-gray-900">Usar VPN</strong> Ac
+             Siempre navega de forma anónima escondiendo tu dirección IP</span
             >
           </li>
         </ul>
         <p class="mt-8">
-          Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio
-          id et. Id blandit molestie auctor fermentum dignissim. Lacus diam
-          tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac
-          adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel
-          integer orci.
+         
         </p>
         <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">
-          From beginner to expert in 3 hours
+          Encriptacion DES
         </h2>
         <p class="mt-6">
-          Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat
-          in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum
-          mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
-          tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi.
-          Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis
-          diam.
+          El DES (Data Encription Standard o Estándar de Encriptación de Datos) es el nombre del documento FIPS (Federal Information Processing Standard) 46-1 del Instituto Nacional de Estándares y Tecnología (NIST) del Departamento de Comercio de Estados Unidos. Fue publicado en 1977. En este documento se describe el DEA (Data Encription Algorithm o Algoritmo de Encriptación de Datos. Es el algoritmo de cifrado simétrico más estudiado, mejor conocido y más empleado del mundo.
         </p>
-        <figure class="mt-10 border-l border-indigo-600 pl-9">
-          <blockquote class="font-semibold text-gray-900">
-            <p>
-              “Vel ultricies morbi odio facilisi ultrices accumsan donec lacus
-              purus. Lectus nibh ullamcorper ac dictum justo in euismod. Risus
-              aenean ut elit massa. In amet aliquet eget cras. Sem volutpat enim
-              tristique.”
-            </p>
-          </blockquote>
-          <figcaption class="flex mt-6 gap-x-4">
-            <img
-              class="flex-none w-6 h-6 rounded-full bg-gray-50"
-              src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-              alt=""
-            />
-            <div class="text-sm leading-6">
-              <strong class="font-semibold text-gray-900">Maria Hill</strong> –
-              Marketing Manager
-            </div>
-          </figcaption>
-        </figure>
+        
+         
         <p class="mt-10">
-          Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
-          enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor
-          praesent donec est. Odio penatibus risus viverra tellus varius sit
-          neque erat velit.
+          
+La encriptación o cifrado es un mecanismo de seguridad que permite modificar un mensaje de modo que su contenido sea ilegible, salvo para su destinatario. De modo inverso, la desencriptación o descifrado permitirá hacer legible un mensaje que estaba cifrado.
+
+Usando criptografía de clave pública el emisor del mensaje cifrará el mensaje aplicando la clave pública del destinatario. Será por tanto el destinatario, el único que podrá descifrar el mensaje aplicando su clave privada.
         </p>
       </div>
-      <figure class="mt-16">
-        <img
-          class="object-cover aspect-video rounded-xl bg-gray-50"
-          src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&w=1310&h=873&q=80&facepad=3"
-          alt=""
-        />
-        <figcaption class="flex mt-4 text-sm leading-6 text-gray-500 gap-x-2">
-          <InformationCircleIcon
-            class="mt-0.5 h-5 w-5 flex-none text-gray-300"
-            aria-hidden="true"
-          />
-          Faucibus commodo massa rhoncus, volutpat.
-        </figcaption>
-      </figure>
-      <div class="max-w-2xl mt-16">
-        <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-          Everything you need to get up and running
-        </h2>
-        <p class="mt-6">
-          Purus morbi dignissim senectus mattis adipiscing. Amet, massa quam
-          varius orci dapibus volutpat cras. In amet eu ridiculus leo sodales
-          cursus tristique. Tincidunt sed tempus ut viverra ridiculus non
-          molestie. Gravida quis fringilla amet eget dui tempor dignissim.
-          Facilisis auctor venenatis varius nunc, congue erat ac. Cras fermentum
-          convallis quam.
-        </p>
-        <p class="mt-8">
-          Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
-          enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor
-          praesent donec est. Odio penatibus risus viverra tellus varius sit
-          neque erat velit.
-        </p>
-      </div>
+     
+     
     </div>
   </div>
 </template>

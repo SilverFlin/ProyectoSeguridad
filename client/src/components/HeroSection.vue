@@ -30,12 +30,10 @@
               <h1
                 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
               >
-                Supercharge your web applications
+                Seguridad en páginas web
               </h1>
               <p class="mt-6 text-lg leading-8 text-gray-600">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
+                Realizar páginas seguras para usuarios que no saben como protegerse al navegar por internet
               </p>
               <div class="flex items-center mt-10 gap-x-6">
                 <a
@@ -79,7 +77,7 @@
                         <div
                           class="px-4 py-2 text-white border-b border-r border-b-white/20 border-r-white/10 bg-white/5"
                         >
-                          SeguridadInformatica.ts
+                        $3gur1d4d1nf0rm4t1c4.ts
                         </div>
                         <div class="px-4 py-2 border-r border-gray-600/10">
                           DropDatabaseCia.sql
@@ -88,8 +86,7 @@
                     </div>
                     <div class="px-6 pt-6 pb-14">
                       <p class="text-gray-400">
-                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA<br />
-                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                        Bienvenidos....
                       </p>
                     </div>
                   </div>
